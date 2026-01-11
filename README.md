@@ -1,3 +1,5 @@
+<div align="center">
+  
 # Web Project
 
 This repository showcases a simple web project built using **HTML** and **CSS**.
