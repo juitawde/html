@@ -1,4 +1,4 @@
-# Web Project
+# 🌟 Web Project 💻
 
 This repository showcases simple web projects built using **HTML** and **CSS**.
 
