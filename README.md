@@ -6,6 +6,7 @@ This repository showcases a simple web project built using **HTML** and **CSS**.
 - `index.html` – The main HTML page
 - `box.html` – An additional HTML page
 - `style.css` – The stylesheet used for styling the web pages
+- box_model.html - Html page 
 
 ## 🛠 Technologies Used
 - HTML5
