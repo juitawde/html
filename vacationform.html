@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vacation forms</title>
+</head>
+
+<style>
+    /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fce7f3, #e0f2fe, #ecfeff);
+    padding: 40px 20px;
+}
+
+/* HEADING - TOP CENTER */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ff6f91;
+    cursor: pointer;
+    transition: color 0.4s ease, text-shadow 0.4s ease, transform 0.3s ease;
+}
+
+/* HOVER EFFECT ON HEADING */
+h1 span:hover {
+    color: #6a5acd;
+    text-shadow: 0 0 14px rgba(106, 90, 205, 0.45);
+    transform: scale(1.05);
+}
+
+/* FORM CONTAINER */
+form {
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 30px 35px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* FORM GROUPS */
+form > div {
+    margin-bottom: 15px;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* INPUTS, SELECT, TEXTAREA */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+/* FOCUS & HOVER EFFECTS */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.25);
+    background: #fff;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    transform: scale(1.01);
+}
+
+/* CHECKBOX ALIGNMENT */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* TERMS ROW */
+form div:last-of-type label {
+    display: inline;
+}
+
+/* SUBMIT BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #ff6f91, #a78bfa);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(167, 139, 250, 0.45);
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    h1 span {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 25px;
+    }
+}
+
+</style>
+
+<body>
+
+<h1><span>Vacation Form</span></h1>
+
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter phone no." required>
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter email id" required>
+        </div>
+
+        <div>
+            <label for="start date">Start Date</label>
+            <input id="start date" type="date" placeholder="Enter start date" required>
+        </div>
+
+        <div>
+            <label for="end date">End Date</label>
+            <input id="end date" type="date" placeholder="Enter end date" required>
+        </div>
+
+        <div>
+            <label for="destination">Destination</label>
+            <input id="destination" type="text" placeholder="Enter destination" required>
+        </div>
+
+        <div>
+            <label for="vacation type">Vacation type</label>
+            <select id="vacation type" required>
+                <option value="personal">Personal</option>
+                <option value="family">Family</option>
+                <option value="medical">Medical</option>
+                <option value="official">Official</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mode of travel">Mode of travel</label>
+            <select id="mode of travel">
+                <option value="flight">Flight</option>
+                <option value="bus">Bus</option>
+                <option value="car">Car</option>
+                <option value="train">Train</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="emergency contact no.">Emergency Contact no.</label>
+            <input id="emergency contact no." type="tel" placeholder="Enter emergency contact no." required>
+        </div>
+
+        <div>
+            <label for="Notes">Notes</label>
+            <textarea id="Notes" placeholder="Enter your notes" rows="4"></textarea>
+        </div>
+
+        <div>
+            <input id="terms" type="checkbox" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+</body>
+</html>

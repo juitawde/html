@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <style>
+        /* ----------- Global Styles ----------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff5f5;
+    color: #2d2d2d;
+}
+
+/* ----------- Header ----------- */
+header {
+    background-color: #e23744;
+    color: white;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideDown 1s ease;
+}
+
+/* Logo */
+header div:first-child {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: pulse 2.5s infinite;
+}
+
+/* Navigation links */
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ffe4e6;
+}
+
+/* ----------- Main Section ----------- */
+main {
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Hero text (color changing) */
+main div:first-child {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: colorShift 4s infinite;
+}
+
+/* Subheading */
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #9b1c1c;
+    animation: slideLeft 1.2s ease;
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 5px solid #e23744;
+    border-radius: 6px;
+    animation: fadeUp 1.5s ease;
+}
+
+/* ----------- Footer ----------- */
+footer {
+    background-color: #2d2d2d;
+    color: #fca5a5;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 60px;
+    animation: fadeIn 2s ease;
+}
+
+/* ----------- Animations ----------- */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        color: #e23744;
+    }
+    50% {
+        color: #f43f5e;
+    }
+    100% {
+        color: #e23744;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>Zomato</div>
+        <div>
+            <a href="/home">Home</a>
+            <a href="/about">About us</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <div>
+            Order Food anytime, anywhere..!
+        </div>
+        
+        <h5>Better Food Quality</h5>
+        <p>
+           For over a decade, we’ve enabled our customers to discover new tastes, delivered right to their doorstep. Our app is packed with features that enable you to experience food delivery like never before.
+        </p>
+    </main>
+
+    <footer>
+        Copyright Zomato All Rights Reserved.
+    </footer>
+</body>
+</html>
